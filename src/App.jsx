@@ -1,9 +1,10 @@
-import { Navbar } from "./components/index";
+import { LandingPage, Navbar } from "./components/index";
 
 export default function App() {
   return (
-    <div className="w-full h-screen bg-zinc-900 text-white">
+    <div className="w-full h-screen text-white">
       <Navbar />
+      <LandingPage />
     </div>
   );
 }
