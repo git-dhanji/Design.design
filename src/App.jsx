@@ -1,8 +1,6 @@
-import React from 'react'
-
 export default function App() {
   return (
-    <div>
+    <div className="w-full h-screen bg-zinc-900">
       Hello Design.design
     </div>
   )
