@@ -8,7 +8,7 @@ export default function LandingPage() {
         {/*  ________All Hero Text _________ */}
         {["We Create", "Eye Opening", "Persentations"].map((elem, index) => (
           <div
-            className="masker flex items-center justify-start overflow-hidden "
+            className="masker flex items-center justify-start  font-['NeueMontreal']"
             key={index}
           >
 
@@ -17,7 +17,7 @@ export default function LandingPage() {
               <div className=" rounded-md w-[8vw] bg-slate-100 h-[5.4vw] mr-1 mt-[1.8vh]"></div>
             )}
 
-            <h1 className=" uppercase text-[7vw] font-bold font-FoundersGrotesk  tracking-tighter  leading-[5.9vw]">
+            <h1 className=" uppercase text-[8.5vw] font-['FoundersGrotesk'] leading-[5.9vw]">
               {elem}
             </h1>
           </div>

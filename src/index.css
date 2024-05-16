@@ -5,10 +5,10 @@
 @layer base {
   @font-face {
     font-family: FoundersGrotesk;
-    src: url("/src/fonts/FoundersGrotesk-Semibold.ttf") format("ttf");
+    src: url("/src/fonts/FoundersGrotesk-Semibold.ttf") format("truetype");
   }
   @font-face {
     font-family: NeueMontreal;
-    src: url("/src/fonts/NeueMontreal-Regular.ttf") format("ttf");
+    src: url("/src/fonts/NeueMontreal-Regular.ttf") format("truetype");
   }
 }
