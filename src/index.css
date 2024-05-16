@@ -9,6 +9,6 @@
   }
   @font-face {
     font-family: NeueMontreal;
-    src: url("/src/fonts/NeueMontreal-Regular.ttf") format("woff");
+    src: url("/src/fonts/NeueMontreal-Regular.ttf") format("ttf");
   }
 }
