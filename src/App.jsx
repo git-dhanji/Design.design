@@ -1,5 +1,6 @@
 import About from "./components/about/About";
 import Eyes from "./components/eyes/Eyes";
+import Featured from "./components/featured/Featured";
 import { LandingPage, Navbar } from "./components/index";
 import Marquee from "./components/marquee/Marquee";
 
@@ -11,6 +12,7 @@ export default function App() {
       <Marquee/>
       <About/>
       <Eyes/>
+      <Featured/>
     </div>
   );
 }
