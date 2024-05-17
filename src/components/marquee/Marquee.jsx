@@ -7,10 +7,10 @@ export default function Marquee() {
         <motion.div
           initial={{ x: "-20%" }}
           animate={{ x: "-100%" }}
-          transition={{ ease: "linear", repeat: Infinity, duration: 15 }}
-          className="text  text-nowrap  border-t-[2px] border-b-[2px] border-zinc-500 flex gap-4 "
+          transition={{ ease: "linear", repeat: Infinity, duration: 40 }}
+          className="text-nowrap  border-t-[2px] border-b-[2px] border-zinc-500 flex gap-8 "
         >
-          {["we are devin", "we are devi", "we are devin"].map(
+          {["we are devin", "we are devin", "we are devin","we are devin", "we are devin", "we are devin"].map(
             (elem, index) => (
               <motion.h1
                 key={index}
