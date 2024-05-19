@@ -16,8 +16,8 @@ export default function Eyes() {
   }, []);
   return (
     <section>
-      <div className="w-full h-screen overflow-hidden">
-        <div className='h-full relative bg-cover bg-center w-full bg-[url("https://ochi.design/wp-content/uploads/2022/05/Top-Viewbbcbv-1-scaled.jpg")]'>
+      <div className="w-full h-screen overflow-hidden ">
+        <div className='h-full relative bg-cover bg-center w-full  bg-[url("https://ochi.design/wp-content/uploads/2022/05/Top-Viewbbcbv-1-scaled.jpg")]'>
           <div className="absolute gap-14 flex  top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%] ">
             {/* _____First Circle -_________ */}
             <div className="h-[15vw] w-[15vw] bg-zinc-100 rounded-full flex items-center justify-center">

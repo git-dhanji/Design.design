@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <div>
-      <div className="about bg-[#CDEA68] min-h-dvh w-full pt-20">
+      <div className="about bg-[#CDEA68] min-h-dvh w-full pt-20 rounded-t-lg">
         <section>
           <div className="heading-about px-20">
             <p className="text-[3.5vw] leading-none tracking-normal font-['NeueMontreal'] text-[#212121]">
