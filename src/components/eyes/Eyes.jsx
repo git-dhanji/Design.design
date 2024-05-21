@@ -26,9 +26,9 @@ export default function Eyes() {
                   style={{
                     transform: `translate(-50%,-50%) rotate(${rotate}deg)`,
                   }}
-                  className="h-10 w-full absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%]"
+                  className="h-10  w-full absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%]"
                 >
-                  <div className="h-10 w-10 bg-zinc-100 rounded-full"></div>
+                  <div className="h-[2vw] w-[2vw] bg-zinc-100 rounded-full"></div>
                 </div>
               </div>
             </div>
@@ -42,7 +42,7 @@ export default function Eyes() {
                   }}
                   className="h-10 w-full absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%]"
                 >
-                  <div className="h-10 w-10 bg-zinc-100 rounded-full"></div>
+                  <div className="h-[2vw] w-[2vw] bg-zinc-100 rounded-full"></div>
                 </div>
               </div>
             </div>
