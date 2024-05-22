@@ -3,6 +3,7 @@ import Eyes from "./components/eyes/Eyes";
 import Featured from "./components/featured/Featured";
 import { LandingPage, Navbar } from "./components/index";
 import Marquee from "./components/marquee/Marquee";
+import Testimonial from "./components/testimonial/Testimonial";
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
       <About/>
       <Eyes/>
       <Featured/>
+      <Testimonial/>
     </div>
   );
 }

@@ -1,6 +1,8 @@
+
 import back from "../../assets/back.jpg";
 
 export default function Featured() {
+
   return (
     <section>
       <div>
@@ -14,9 +16,14 @@ export default function Featured() {
 
           <div className="box-part pb-8 mx-auto">
             <div className="w-full px-20 flex  gap-10 relative ">
+              <h2 className="-tracking-tight absolute top-[59%] left-1/2 -translate-x-1/2 -translate-y-[59%] z-30 uppercase text-5xl font-semibold leading-none font-['NeueMontreal']">
+                {/* {text.split("").map((elem, key) => (
+                  <span key={key}>{elem}</span>
+                ))} */}
+                Designer
+              </h2>
               {/* Box 1 */}
-
-              <div className="w-1/2 mt-20 relative">
+              <div className="w-1/2 mt-20 relative ">
                 {/*  Text parts */}
                 <div className="flex mb-4 items-center">
                   <div className="h-4 w-4 rounded-full bg-black"></div>
@@ -25,18 +32,19 @@ export default function Featured() {
                   </p>
                 </div>
                 {/* Box parts */}
-                <div className=" relative w-full rounded-lg h-[75vh] overflow-hidden">
+                <div className=" relative w-full rounded-lg duration-200 h-[75vh] overflow-hidden hover:scale-95">
                   <div className="h-full w-full overflow-hidden">
                     <img
                       src={back}
                       alt="images"
-                      className="w-full h-full hover:scale-110 bg-cover duration-300"
+                      className="w-full h-full bg-cover duration-500 hover:scale-105"
                     />
                   </div>
                 </div>
               </div>
 
-              <div className="w-1/2 mt-20 relative">
+              {/* Box 2 */}
+              <div className="w-1/2 mt-20 relative ">
                 {/*  Text parts */}
                 <div className="flex mb-4 items-center">
                   <div className="h-4 w-4 rounded-full bg-black"></div>
@@ -45,12 +53,12 @@ export default function Featured() {
                   </p>
                 </div>
                 {/* Box parts */}
-                <div className=" relative w-full rounded-lg h-[75vh] overflow-hidden">
+                <div className=" relative w-full rounded-lg duration-200 h-[75vh] overflow-hidden hover:scale-95">
                   <div className="h-full w-full overflow-hidden">
                     <img
                       src={back}
                       alt="images"
-                      className="w-full h-full hover:scale-110 bg-cover self-stretch duration-300"
+                      className="w-full h-full bg-cover duration-300"
                     />
                   </div>
                 </div>
