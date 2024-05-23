@@ -10,17 +10,17 @@ export default function Testimonial() {
     },
     {
       project_name: "Raijuro",
-      project_manager: "slaou slavia",
+      project_manager: "John Eliot",
       read_more: "READ",
     },
     {
-      project_name: "Sangdhya",
-      project_manager: "sanghtdy Sharma",
+      project_name: "Rengenrs",
+      project_manager: "Avinash prasad",
       read_more: "READ",
     },
     {
       project_name: "Davanci",
-      project_manager: "Avinash prasad",
+      project_manager: "Mohmmad Abuzar",
       read_more: "READ",
     },
     {
@@ -57,12 +57,6 @@ export default function Testimonial() {
                     Services:
                   </p>
                   <div className="flex flex-col justify-start items-start pt-16 gap-5">
-                    {/* <button className="border-[1px] flex items-center justify-center border-slate-100 rounded-full py-2 text-center leading-none px-4">
-                      Superstar
-                    </button>
-                    <button className="border-[1px] border-slate-100 rounded-full py-2 text-center leading-none px-4">
-                      Lapata Lady
-                    </button> */}
                     <Button text="Superstar" variant="border" />
                     <Button text="Lapata Lady" variant="border" />
                   </div>
@@ -108,7 +102,7 @@ export default function Testimonial() {
                   {elem.project_manager}
                 </p>
 
-                <p className="text-white font-['NeueMontreal'] tracking-wider leading-none capitalize text-md text-right">
+                <p className="text-white decoration-red underline  cursor-pointer font-['NeueMontreal'] tracking-wider leading-none capitalize text-md text-right">
                   {elem.read_more}
                 </p>
               </div>

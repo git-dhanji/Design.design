@@ -1,8 +1,9 @@
 import { FaArrowUpLong } from "react-icons/fa6";
+import Button from "../button/Button";
 
 export default function LandingPage() {
   return (
-    <div className="w-full h-screen bg-zinc-900 pt-1">
+    <section className="w-full h-screen bg-zinc-900 pt-1 font-['NeueMontreal']">
       <div className="textstrcture mt-40 px-20">
 
         {/*  ________All Hero Text _________ */}
@@ -40,15 +41,20 @@ export default function LandingPage() {
 
         {/* ___________start project Btn with arrow_______ */}
         <div className="parent btn py-3 flex items-center gap-4 group ">
-          <button className="child cursor-pointer border-[1.5px] border-slate-600 px-4 py-1 tracking-normal rounded-full uppercase text-center dark:hover:bg-slate-100 dark:hover:text-zinc-950 duration-200 ease-in-out">
+          {/* <button className="child cursor-pointer border-[1.5px] border-slate-600 px-4 py-1 tracking-normal rounded-full uppercase text-center dark:hover:bg-slate-100 dark:hover:text-zinc-950 duration-200 ease-in-out">
             Start the project
-          </button>
+          </button> */}
+          <Button
+          text="start the project"
+          variant="border"
+          className="uppercase"
+          />
 
           <button className="child cursor-pointer border-slate-600 border-[1px] dark:hover:bg-slate-100 dark:hover:text-zinc-950 duration-200 ease-in-out p-2 rounded-full rotate-45">
             <FaArrowUpLong />
           </button>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

@@ -1,8 +1,8 @@
 export default function Navbar() {
-  const links = ["Services", "Our Works", "About Us", "Insights"];
+  const links = ["Services", "Our Works", "About Us", "Insights","Contact-us"];
 
   return (
-    <div className="fixed z-[999] w-full px-20 py-8 flex justify-between items-center">
+    <div className="fixed z-[999] font-['NeueMontreal'] w-full px-20 py-8 flex justify-between items-center">
 
         
       {/* ..............Logo section start here................  */}
@@ -38,11 +38,11 @@ export default function Navbar() {
       </div>
 
       {/* ..............Links section start here................  */}
-      <div className="links font-['Neue Montreal'] flex gap-10">
+      <div className="links font-['Ubuntu'] flex gap-10  ">
         {links.map((item, key) => (
           <a
             key={key}
-            className={`text-lg  font-light capitalize cursor-pointer ${key == links.length - 1 && "ml-32"}`}
+            className={`text-md font-[200] capitalize cursor-pointer ${key == links.length - 1 && "ml-32"}`}
           >
             {item}
           </a>
