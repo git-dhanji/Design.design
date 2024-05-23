@@ -1,9 +1,12 @@
 import { FaArrowUpLong } from "react-icons/fa6";
 import Button from "../button/Button";
+import { motion } from "framer-motion";
+import pochi from '../../assets/pochi.png'
 
 export default function LandingPage() {
+
   return (
-    <section className="w-full h-screen bg-zinc-900 pt-1 font-['NeueMontreal']">
+    <section data-scroll data-scroll-speed="-.3" className="w-full h-screen bg-zinc-900 pt-1 font-['NeueMontreal']">
       <div className="textstrcture mt-40 px-20">
 
         {/*  ________All Hero Text _________ */}
@@ -15,7 +18,13 @@ export default function LandingPage() {
 
             {/* ___Image part before Text_______ */}
             {index === 1 && (
-              <div className=" rounded-md w-[8vw] bg-slate-100 h-[5.4vw] mr-1 mt-[1.8vh]"></div>
+              <motion.div
+              initial={{width:0}}
+              animate={{width:"8vw"}}
+              transition={{ease:[0.76, 0, 0.24, 1],duration:1}}
+               className=" rounded-md w-[8vw] bg-slate-100 h-[5.4vw] mr-1 mt-[1.8vh] relative overflow-hidden">
+                <img src={pochi}  className="w-full h-full object-cover" />
+               </motion.div>
             )}
 
             <h1 className=" uppercase text-[8.5vw] font-['FoundersGrotesk'] leading-[5.9vw]">
