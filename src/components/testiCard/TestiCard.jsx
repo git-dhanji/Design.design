@@ -5,7 +5,7 @@ export default function TestiCard() {
     <div>
       <div className="h-[90vh]  w-full px-20 relative">
         <div className="grid grid-cols-4 relative h-full place-items-center gap-8">
-          <div className="bg-[#183502] h-[50%] relative w-full rounded-lg col-span-2">
+          <div className="bg-[#004D43] h-[50%] relative w-full rounded-lg col-span-2">
             <img src={jpeg} alt="" className="bg-cover h-full w-full"/>
             <Button
               text="2023-2034"

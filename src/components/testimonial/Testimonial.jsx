@@ -1,4 +1,5 @@
 import modelMaleImage from "../../assets/modelMaleImage.jpg";
+import Button from "../button/Button";
 
 export default function Testimonial() {
   const listData_ls = [
@@ -38,7 +39,7 @@ export default function Testimonial() {
       <div className="h-auto min-h-screen w-full py-4">
         {/* Client Reviews  section text*/}
         <div className="text border-b-[1px] border-gray-600 pb-10">
-          <h2 className="px-20 pt-10 text-[3vw] font font-['NeueMontreal'] tracking-wider leading-none capitalize text-md from-neutral-50 leading-none tracking-wide">
+          <h2 className="px-20 pt-10 text-[3vw] font font-['NeueMontreal'] tracking-wider leading-none capitalize text-md from-neutral-50 ">
             Clients Reviews
           </h2>
         </div>
@@ -47,21 +48,23 @@ export default function Testimonial() {
           {/*  Review Left part */}
           <div className="w-1/2 relative  h-full flex flex-col">
             <div className=" flex w-full justify-between">
-              <p className="font-['NeueMontreal'] tracking-wider leading-none capitalize text-md leading-none tracking-wider text-[16px]">
+              <p className="font-['NeueMontreal'] tracking-wider leading-none capitalize text-md  text-[16px]">
                 Pro.Chin altman
               </p>
               <div className="pr-40 relative">
                 <div>
-                  <p className="font-['NeueMontreal'] tracking-wider leading-none capitalize text-md leading-none tracking-wider text-[16px]">
+                  <p className="font-['NeueMontreal'] tracking-wider leading-none capitalize text-md  text-[16px]">
                     Services:
                   </p>
                   <div className="flex flex-col justify-start items-start pt-16 gap-5">
-                    <button className="border-[1px] flex items-center justify-center border-slate-100 rounded-full py-2 text-center leading-none px-4">
+                    {/* <button className="border-[1px] flex items-center justify-center border-slate-100 rounded-full py-2 text-center leading-none px-4">
                       Superstar
                     </button>
                     <button className="border-[1px] border-slate-100 rounded-full py-2 text-center leading-none px-4">
                       Lapata Lady
-                    </button>
+                    </button> */}
+                    <Button text="Superstar" variant="border" />
+                    <Button text="Lapata Lady" variant="border" />
                   </div>
                 </div>
               </div>
@@ -97,11 +100,17 @@ export default function Testimonial() {
                 key={index}
                 className=" grid grid-cols-3   justify-between px-20 h-14 items-center border-b-[1px] border-slate-600"
               >
-                <p className="text-white font-['NeueMontreal'] tracking-wider leading-none capitalize text-md">{elem.project_name}</p>
+                <p className="text-white font-['NeueMontreal'] tracking-wider leading-none capitalize text-md">
+                  {elem.project_name}
+                </p>
 
-                <p className="text-white font-['NeueMontreal'] tracking-wider leading-none capitalize text-md   w-10/12 text-start pl-[200px]">{elem.project_manager}</p>
+                <p className="text-white font-['NeueMontreal'] tracking-wider leading-none capitalize text-md   w-10/12 text-start pl-[200px]">
+                  {elem.project_manager}
+                </p>
 
-                <p className="text-white font-['NeueMontreal'] tracking-wider leading-none capitalize text-md text-right">{elem.read_more}</p>
+                <p className="text-white font-['NeueMontreal'] tracking-wider leading-none capitalize text-md text-right">
+                  {elem.read_more}
+                </p>
               </div>
             ))}
           </div>

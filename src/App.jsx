@@ -3,6 +3,7 @@ import Eyes from "./components/eyes/Eyes";
 import Featured from "./components/featured/Featured";
 import { LandingPage, Navbar } from "./components/index";
 import Marquee from "./components/marquee/Marquee";
+import ProjectShowCase from "./components/projectShowCase/ProjectShowCase";
 import TestiCard from "./components/testiCard/TestiCard";
 import Testimonial from "./components/testimonial/Testimonial";
 
@@ -17,6 +18,7 @@ export default function App() {
       <Featured/>
       <Testimonial/>
       <TestiCard/>
+      <ProjectShowCase/>
     </div>
   );
 }
