@@ -6,7 +6,7 @@ export default function ProjectShowCase() {
       <div className="min-h-screen w-full bg-[#CDEA68] relative pb-10">
         {/* text parts */}
         <div className=" w-full  flex items-center justify-center">
-          <h2 className="uppercase font-['FoundersGrotesk'] text-[#212121] leading-[12vw] pt-32 tracking-tight text-[16vw] text-center">
+          <h2 className="uppercase selection:bg-transparent font-['FoundersGrotesk'] text-[#212121] leading-[12vw] pt-32 tracking-tight text-[16vw] text-center">
             ready <br />
             to start <br />
             the project

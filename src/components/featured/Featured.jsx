@@ -1,8 +1,6 @@
-
-import back from "../../assets/back.jpg";
+import jpegji from "../../assets/jpegji.jpg";
 
 export default function Featured() {
-
   return (
     <section>
       <div>
@@ -35,7 +33,7 @@ export default function Featured() {
                 <div className=" relative w-full rounded-lg duration-200 h-[75vh] overflow-hidden hover:scale-95">
                   <div className="h-full w-full overflow-hidden">
                     <img
-                      src={back}
+                      src={jpegji}
                       alt="images"
                       className="w-full h-full bg-cover duration-500 hover:scale-105"
                     />
@@ -56,9 +54,9 @@ export default function Featured() {
                 <div className=" relative w-full rounded-lg duration-200 h-[75vh] overflow-hidden hover:scale-95">
                   <div className="h-full w-full overflow-hidden">
                     <img
-                      src={back}
+                      src={jpegji}
                       alt="images"
-                      className="w-full h-full bg-cover duration-300"
+                      className="w-full h-full bg-cover duration-500 hover:scale-105"
                     />
                   </div>
                 </div>

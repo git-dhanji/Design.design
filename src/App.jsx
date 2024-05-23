@@ -6,6 +6,7 @@ import Marquee from "./components/marquee/Marquee";
 import ProjectShowCase from "./components/projectShowCase/ProjectShowCase";
 import TestiCard from "./components/testiCard/TestiCard";
 import Testimonial from "./components/testimonial/Testimonial";
+import Footer from "./components/footer/Footer";
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
       <Testimonial/>
       <TestiCard/>
       <ProjectShowCase/>
+      <Footer/>
     </div>
   );
 }
