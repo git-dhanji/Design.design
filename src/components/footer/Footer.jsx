@@ -1,9 +1,9 @@
-import React from "react";
+
 import Button from '../button/Button'
 
 export default function Footer() {
   return (
-    <section className="font-['FoundersGrotesk']">
+    <section className="font-['FoundersGrotesk']" id="contact">
       <div className="h-screen p-20 flex w-full relative bg-[#212121] text=[#f1f1f1]">
         {/* Left section */}
         <div className="left w-1/2 h-full flex items-start justify-between flex-col">

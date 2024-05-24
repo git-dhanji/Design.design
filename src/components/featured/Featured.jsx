@@ -2,7 +2,7 @@ import jpegji from "../../assets/jpegji.jpg";
 
 export default function Featured() {
   return (
-    <section>
+    <section id="ourworks">
       <div>
         <div className="w-full mx-auto min-h-screen pb-20 bg-[#18181B] rounded-t-md pt-40">
           <div>

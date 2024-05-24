@@ -1,10 +1,34 @@
+/* eslint-disable no-unused-vars */
+import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
+
 export default function Navbar() {
-  const links = ["Services", "Our Works", "About Us", "Insights","Contact-us"];
+  const listofurl = [
+    { name: "Home", loction: "/" },
+    { name: "About", loction: "#about" },
+    { name: "Insights", loction: "#insight" },
+    { name: "Our works", loction: "#ourworks" },
+    { name: "Contact", loction: "#contact" },
+  ];
+
+  const [prevScrollPos, setPrevScrollPos] = useState(10);
+  const [visible, setVisible] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.scrollY;
+      setVisible(currentScrollPos < prevScrollPos || currentScrollPos < 10);
+      setPrevScrollPos(currentScrollPos);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [prevScrollPos]);
 
   return (
-    <div className="fixed z-[999] font-['NeueMontreal'] w-full px-20 py-8 flex justify-between items-center">
-
-        
+    <div
+      className={`${visible ? "transition-transform duration-300 ease-in-out transform translate-y-0" : "transition-transform duration-300 ease-in-out transform -translate-y-full hidden"}  ${prevScrollPos > 100 && "bg-white"} bg-opacity-5 backdrop-blur-lg  fixed z-[999] font-['NeueMontreal'] w-full px-20 py-6 flex justify-between items-center`}
+    >
       {/* ..............Logo section start here................  */}
       <div className="logo">
         <svg
@@ -39,14 +63,16 @@ export default function Navbar() {
 
       {/* ..............Links section start here................  */}
       <div className="links font-['Ubuntu'] flex gap-10  ">
-        {links.map((item, key) => (
-          <a
-            key={key}
-            className={`text-md font-[200] capitalize cursor-pointer ${key == links.length - 1 && "ml-32"}`}
-          >
-            {item}
-          </a>
-        ))}
+        {listofurl &&
+          listofurl?.map((item, key) => (
+            <a
+              key={key}
+              href={item.loction}
+              className={`text-md text-white font-[200] capitalize cursor-pointer ${key == listofurl.length - 1 && "ml-32"}`}
+            >
+              {item.name}
+            </a>
+          ))}
       </div>
     </div>
   );
