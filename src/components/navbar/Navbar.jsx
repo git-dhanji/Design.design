@@ -5,10 +5,10 @@ import { useLocation } from "react-router-dom";
 export default function Navbar() {
   const listofurl = [
     { name: "Home", loction: "/" },
-    { name: "About", loction: "#about" },
-    { name: "Insights", loction: "#insight" },
-    { name: "Our works", loction: "#ourworks" },
-    { name: "Contact", loction: "#contact" },
+    { name: "About", loction: "/About" },
+    { name: "Insights", loction: "/Insight" },
+    { name: "Our works", loction: "/works" },
+    { name: "Contact", loction: "/contact" },
   ];
 
   const [prevScrollPos, setPrevScrollPos] = useState(10);
@@ -24,6 +24,9 @@ export default function Navbar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [prevScrollPos]);
+
+
+
 
   return (
     <div
