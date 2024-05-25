@@ -2,7 +2,7 @@ import  { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, useAnimation } from 'framer-motion';
 
-export default function OpenLinks() {
+export default function OpenLinks({handleClick}) {
   const controls = useAnimation();
   const listControls = useAnimation();
 
@@ -16,7 +16,7 @@ export default function OpenLinks() {
 
   useEffect(() => {
     const animateSequence = async () => {
-      await controls.start({ width:'100%', transition: { duration: 0.3 } });
+      await controls.start({ height:'100%', transition: { duration: 0.3 } });
       for (let i = 0; i < listofurl.length; i++) {
         await listControls.start((index) => index === i ? { x: 0, opacity: 1, transition: { duration: 0.2 } } : {});
       }
@@ -28,7 +28,7 @@ export default function OpenLinks() {
   return (
     <motion.div
       className={`md:hidden absolute z-[100] h-screen w-full dark:bg-[#212121] bg-white dark:text-[#f1f1f1] text-[#212121]`}
-      initial={{ width: 0 }}
+      initial={{ height: 0 }}
       animate={controls}
     >
       <div className="w-full h-full relative">
@@ -43,6 +43,7 @@ export default function OpenLinks() {
                 className="pb-4 z-[70]"
               >
                 <Link
+                onClick={handleClick}
                   to={elem.loction}
                   className="uppercase text-[8vw] leading-none tracking-wider font-semibold font-['NeueMontreal'] duration-300 text-start hover:text-[#CDEA68] transition-all hover:tracking-widest"
                 >

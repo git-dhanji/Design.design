@@ -28,7 +28,6 @@ export default function Navbar() {
   }, [prevScrollPos]);
 
   const handleClick = () => {
-    console.log('hello')
     setCross(!cross);
   };
   
@@ -96,9 +95,11 @@ export default function Navbar() {
       </div>
 
       {cross && (
-        <div className=" md:hidden absolute  w-full h-screen z-[110] ">
-          <OpenLinks />
-          <div className="absolute top-5 right-6 z-[100]">
+        <div className=" md:hidden fixed  w-full h-screen z-[110] ">
+          <OpenLinks
+          handleClick={handleClick}
+           />
+          <div className=" absolute top-5 right-6 z-[100]">
           <Humberger 
           cross={true}
           handleClick={handleClick}

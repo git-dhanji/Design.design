@@ -25,5 +25,5 @@ export {
   Marquee,
   Footer,
   Humberger,
-  OpenLinks
+  OpenLinks,
 };
