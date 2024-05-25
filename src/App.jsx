@@ -1,6 +1,7 @@
+/* eslint-disable no-unused-vars */
 
 import LocomotiveScroll from "locomotive-scroll";
-import { Footer, Navbar } from "./components/index";
+import { Footer, Humberger, Navbar ,OpenLinks} from "./components/index";
 import { Outlet } from "react-router-dom";
 
 export default function App() {
@@ -8,8 +9,10 @@ export default function App() {
   return (
     <>
       <Navbar/>
-      <Outlet />
-      <Footer />
+      {/* <OpenLinks/> */}
+      {/* <Humberger/> */}
+      {/* <Outlet /> */}
+      {/* <Footer /> */}
     </>
   );
 }

@@ -9,19 +9,21 @@ import Testimonial from "./testimonial/Testimonial";
 import Featured from "./featured/Featured";
 import ProjectShowCase from "./projectShowCase/ProjectShowCase";
 import Button from "./button/Button";
+import Humberger from "./button/Humberger";
+import OpenLinks from "./openLinks/OpenLinks";
 
-
-export{
-    Navbar,
-    LandingPage,
-    About,
-    Eyes,
-    Featured,
-    TestiCard,
-    Testimonial,
-    Button,
-    ProjectShowCase,
-    Marquee,
-    Footer
-
-}
+export {
+  Navbar,
+  LandingPage,
+  About,
+  Eyes,
+  Featured,
+  TestiCard,
+  Testimonial,
+  Button,
+  ProjectShowCase,
+  Marquee,
+  Footer,
+  Humberger,
+  OpenLinks
+};
