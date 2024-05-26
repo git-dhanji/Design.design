@@ -1,10 +1,14 @@
+import { PageRef } from "../../components";
 
 export default function ContactPage() {
   return (
-    <div className="h-screen w-full bg-[#212121]">
-      <div>
-        Contact the vice city
-      </div>
+    <div className="h-auto w-full">
+    <div>
+      <PageRef
+      name="contact"
+      />
+     <div>contact page in working</div>
     </div>
+  </div>
   )
 }

@@ -8,7 +8,7 @@ export default function Navbar() {
     { name: "Home", loction: "/" },
     { name: "About", loction: "/About" },
     { name: "Insights", loction: "/Insight" },
-    { name: "Our works", loction: "/works" },
+    { name: "Our works", loction: "/presentation" },
     { name: "Contact", loction: "/contact" },
   ];
 

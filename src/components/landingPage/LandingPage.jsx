@@ -21,7 +21,7 @@ export default function LandingPage() {
               <motion.div
               initial={{width:0}}
               animate={{width:"8vw"}}
-              transition={{ease:[0.76, 0, 0.24, 1],duration:1}}
+              transition={{ease:[0.76, 0, 0.24, 1],duration:1,delay:2}}
                className=" rounded-md w-[8vw] bg-slate-100 h-[5.4vw] mr-1 mt-[1.8vh] relative overflow-hidden">
                 <img src={pochi}  className="w-full h-full object-cover" />
                </motion.div>
