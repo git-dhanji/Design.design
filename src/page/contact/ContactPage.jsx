@@ -1,5 +1,5 @@
 
-export default function Contact() {
+export default function ContactPage() {
   return (
     <div className="h-screen w-full bg-[#212121]">
       <div>

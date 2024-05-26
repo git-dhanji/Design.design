@@ -62,7 +62,7 @@ export default function About() {
               <h3 className="text-[4vw] leading-none tracking-normal font-['NeueMontreal'] text-[#212121]">
                 Our approach:
               </h3>
-              <button className="bg-[#212121] rounded-full py-4 px-6 text-center uppercase relative leading-none mt-4 flex items-center gap-8">
+              <button className="bg-[#212121] text-[#f1f1f1] rounded-full py-4 px-6 text-center uppercase relative leading-none mt-4 flex items-center gap-8">
                 Read MOre <div className="w-2 h-2 bg-white rounded-full"></div>
               </button>
             </div>

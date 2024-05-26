@@ -91,11 +91,12 @@ export default function Navbar() {
           </div>
         </div>
 
-        {/* Responsive parts  */}
+        {/* Responsive parts  humberger */}
       </div>
 
+
       {cross && (
-        <div className=" md:hidden fixed  w-full h-screen z-[110] ">
+        <div className=" md:hidden fixed  w-full min-h-full z-[110] ">
           <OpenLinks
           handleClick={handleClick}
            />

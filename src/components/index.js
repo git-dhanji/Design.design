@@ -11,6 +11,7 @@ import ProjectShowCase from "./projectShowCase/ProjectShowCase";
 import Button from "./button/Button";
 import Humberger from "./button/Humberger";
 import OpenLinks from "./openLinks/OpenLinks";
+import PageRef from "./animationComp/PageRef";
 
 export {
   Navbar,
@@ -26,4 +27,5 @@ export {
   Footer,
   Humberger,
   OpenLinks,
+  PageRef
 };
