@@ -18,7 +18,7 @@ export default function OpenLinks({handleClick}) {
     const animateSequence = async () => {
       await controls.start({ height:'100%', transition: { duration: 0.3 } });
       for (let i = 0; i < listofurl.length; i++) {
-        await listControls.start((index) => index === i ? { x: 0, opacity: 1, transition: { duration: 0.2 } } : {});
+        await listControls.start((index) => index === i ? { x: 0, opacity: 1, transition: { duration: 0.1 } } : {});
       }
     };
 

@@ -2,8 +2,10 @@
 import { useEffect, useState } from "react";
 import Humberger from "../button/Humberger";
 import OpenLinks from "../openLinks/OpenLinks";
+import { useNavigate } from "react-router-dom";
 
 export default function Navbar() {
+  const navigate = useNavigate()
   const listofurl = [
     { name: "Home", loction: "/" },
     { name: "About", loction: "/About" },
@@ -13,7 +15,11 @@ export default function Navbar() {
   ];
 
   const [prevScrollPos, setPrevScrollPos] = useState(10);
+
+
+  //visible for if scroll y -y change the navbar bg 
   const [visible, setVisible] = useState(true);
+
   const [cross, setCross] = useState(false);
 
   useEffect(() => {
@@ -31,15 +37,20 @@ export default function Navbar() {
     setCross(!cross);
   };
   
+  const handleNavigate=()=>{
+    navigate('/')
+  }
 
   return (
-    <div>
+    <div className="overflow-hidden">
       <div
         className={` ${visible ? "transition-transform duration-300 ease-in-out transform translate-y-0" : "transition-transform duration-300 ease-in-out transform -translate-y-full hidden"}  ${prevScrollPos > 100 && "bg-white"} bg-opacity-5 backdrop-blur-lg  fixed z-[99] font-['NeueMontreal']  w-full md:px-20 sm:px-10 px-5 py-6 flex justify-between items-center  `}
       >
-        <div className="mx-auto flex justify-between items-center max-w-screen-xl w-[1280px] text-[#f1f1f1]">
+        <div className="mx-auto flex justify-between items-center max-w-screen-xl  w-[1280px] text-[#f1f1f1]">
           {/* ..............Logo section start here................  */}
-          <div className="logo">
+          <div className="logo"
+          onClick={handleNavigate}
+          >
             <svg
               width="72"
               height="30"

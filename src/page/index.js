@@ -4,6 +4,7 @@ import AboutPage from "./about/AboutPage";
 import WorksPage from "./works/WorksPage";
 import ServicesPage from "./services/ServicesPage";
 import InsightsPage from "./insights/InsightsPage";
+import StartProjectPage from "./startproject/StartProjectPage";
 
 
 export {
@@ -12,5 +13,6 @@ export {
     AboutPage,
     WorksPage,
     ServicesPage,
-    InsightsPage
+    InsightsPage,
+    StartProjectPage
 }
