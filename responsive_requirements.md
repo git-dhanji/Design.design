@@ -11,7 +11,6 @@ sm-px-10
 // mobile s
 mobile-s:px-5
 
-//xl (min-w-[1280px])
 
 
 initial phase : px-5

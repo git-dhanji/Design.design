@@ -3,7 +3,7 @@ import Button from "../button/Button";
 export default function ProjectShowCase() {
   return (
     <div>
-      <div className="min-h-screen w-full bg-[#CDEA68] relative pb-10">
+      <div className="min-h-screen max-w-screen-xl mx-auto bg-[#CDEA68] relative pb-10">
         {/* text parts */}
         <div className=" w-full  flex items-center justify-center">
           <h2 className="uppercase selection:bg-transparent font-['FoundersGrotesk'] text-[#212121] leading-[12vw] pt-32 tracking-tight text-[16vw] text-center">

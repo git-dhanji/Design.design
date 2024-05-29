@@ -4,7 +4,7 @@ export default function TestiCard() {
   return (
     <div id="insight">
       <div className="h-[90vh]  w-full px-20 relative">
-        <div className="grid grid-cols-4 relative h-full place-items-center gap-8">
+        <div className="grid lg:grid-cols-4 lg:row-span-1 relative h-full place-items-center gap-x-8">
           <div className="bg-[#004D43] h-[50%] relative w-full rounded-lg col-span-2">
             <img src={jpeg} alt="" className="bg-cover h-full w-full"/>
             <Button
